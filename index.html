@@ -26,6 +26,10 @@
 			background-color: var(--branco-principal);
 		}
 
+		html {
+ 			 scroll-behavior: smooth;
+		}
+
 		header{
 			display: flex;
 			justify-content: space-between;
@@ -34,7 +38,14 @@
 			width: 100%;
 			height: 100px;
 			padding: 4px 8px;
-			position: fixed;
+			position: sticky;
+			top: 0;
+
+		}
+
+		header img
+		{
+			z-index: 9;
 		}
 
 
@@ -42,12 +53,18 @@
 			margin: 0 24px;
 			color: var(--branco-principal);
 			font-size: 24px;
+			font-weight: bold;
+			text-decoration: none;
 		}
 
+		nav a:hover{
+			color: #FFD700;
+		}
 
 		p{
 			line-height: 1.5;
 			font-size: 20px;
+			color: #404040;
 
 		}
 
@@ -65,6 +82,10 @@
 			font-size: 32px;
 		}
 
+		h4{
+			font-size: 24px;
+		}
+
 
 
 		#area_banner img
@@ -74,9 +95,14 @@
 		}
 
 
-		#area_sobre, #area_servicos, #area_clientes
+		#area_sobre, #area_servicos, #area_clientes, #area_contato
 		{
 			margin: 24px 24px 0 24px;
+		}
+
+		#area_sobre p
+		{
+			margin-bottom: 4px;
 		}
 
 		#painel_cards
@@ -116,6 +142,62 @@
 			width: 80%;
 		}
 
+
+		#painel_contato
+		{
+			display: flex;
+			justify-content: space-between;
+			margin-top: 24px;
+		}
+
+		form{
+			display: flex;
+			flex-direction: column;
+			width: 45%;
+		}
+
+		label{
+			font-weight: bold;
+			margin-bottom: 8px;
+		}
+
+		input[type="text"]{
+			margin-bottom: 8px;
+			font-size: 20px;
+			border-radius: 5px;
+		}
+
+		input[type="button"]{
+			margin-top: 8px;
+			width: 40%;
+			font-size: 24px;
+			border-radius: 5px;
+			background-color: var(--roxo-principal);
+			color: var(--branco-principal);
+			font-weight: bold;
+		}
+
+		#endereco
+		{
+			width: 50%;
+		}
+
+		textarea
+		{
+			height: 400px;
+			resize: none;
+			font-size: 20px;
+			border-radius: 5px;
+		}
+
+		#mapa
+		{
+			width: 100%;
+			height: 500px;
+			border-radius: 10px;
+			margin-top: 8px;
+		}
+
 		footer{
 			margin-top: 24px;
 			background-color: var(--roxo-principal);
@@ -143,9 +225,9 @@
 
 
 		<nav class="grow2">
-			<a href="">Link 1</a>
-			<a href="">Link 2</a>
-			<a href="">Link 3</a>
+			<a href="#area_servicos">Serviços</a>
+			<a href="#area_contato">Contato</a>
+			<a href="#">Área Restrita</a>
 		</nav>
 	</header>
 
@@ -254,7 +336,39 @@
 
 		<section id="area_contato">
 			<h2>Quer nossa ajuda? Entre em contato conosco!</h2>
-		</section>>
+
+			<div id="painel_contato">
+				<form action="mailto:avelarvnc@gmail.com" method="GET">
+					<label for="nome">Nome</label>
+					<input type="text" name="nome" placeholder="Nome:" required>
+					<label for="email">E-mail</label>
+					<input type="text" name="email" placeholder="E-mail:" required>
+					<label for="whats">WhatsApp</label>
+					<input type="text" name="whats" placeholder="WhatsApp:" required>
+					<label for="assunto">Assunto</label>
+					<input type="text" name="assunto" placeholder="Assunto:" required>
+					<label for="mensagem"></label>
+					<textarea placeholder="Como podemos te ajudar?"></textarea>
+					<input type="button" name="enviar" value="Enviar">
+				</form>
+
+				<div id="endereco">
+					<h4>Onde estamos?</h4>
+					<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6496.994233780676!2d-46.31989474165877!3d-23.94931202663534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce039dcd3f10e9%3A0x643657ade3927eb3!2sSenac%20Santos!5e0!3m2!1spt-BR!2sbr!4v1664371541393!5m2!1spt-BR!2sbr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<p>Av. Conselheiro Nébias, 309, Vila Mathias, Santos - SP</p>
+					<p>Telefone: (00) 0000-0000</p>
+					<p>Acompanhe-nos nas redes sociais</p>
+					<img src="img/linkedin.svg" alt="logotipo do linkedin">
+					<img src="img/twitter.svg" alt="logotipo do twitter">
+					<img src="img/youtube.svg" alt="logotipo do youtube">
+					<img src="img/facebook.svg" alt="logotipo do facebook">
+				</div>
+
+			</div>
+			
+
+			
+		</section>
 	</main>
 
 	<footer>

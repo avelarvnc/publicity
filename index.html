@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Publicity</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+
+		:root
+		{
+			--branco-principal: #FFFAFA;
+			--branco-secundario: #F0FFFF;
+			--roxo-principal: #8A2BE2;
+			--roxo-secundario: #9932CC;
+		}
+
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		body{
+			background-color: var(--branco-principal);
+		}
+
+		header{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: var(--roxo-principal);
+			width: 100%;
+			height: 100px;
+			padding: 4px 8px;
+			position: fixed;
+		}
+
+
+		nav a{
+			margin: 0 24px;
+			color: var(--branco-principal);
+			font-size: 24px;
+		}
+
+
+		p{
+			line-height: 1.5;
+			font-size: 20px;
+
+		}
+
+		h1{
+			font-size: 52px;
+		}
+
+		h2
+		{
+			font-size: 40px;
+			color: var(--roxo-secundario);
+		}
+
+		h3{
+			font-size: 32px;
+		}
+
+
+
+		#area_banner img
+		{
+			width: 100%;
+			box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+		}
+
+
+		#area_sobre, #area_servicos, #area_clientes
+		{
+			margin: 24px 24px 0 24px;
+		}
+
+		#painel_cards
+		{
+			display: flex;
+			justify-content: space-between;		
+			margin-top: 24px;		
+		}
+
+		.card
+		{
+			width: 32%;						
+			text-align: justify;
+			background-color: var(--branco-secundario);
+			border-radius: 10px;
+			padding: 8px; 
+			text-align: center;
+			box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+		}
+
+		.card img
+		{
+			width: 80%;
+			border-radius: 5px;
+			margin: 8px 0;
+		}
+
+		#painel_clientes{
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			justify-content: center;
+			margin-top: 24px;
+		}
+
+
+		#painel_clientes img{
+			width: 80%;
+		}
+
+		footer{
+			margin-top: 24px;
+			background-color: var(--roxo-principal);
+			height: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		footer p {
+			font-size: 16px;
+			color: var(--branco-principal);
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+	<header>
+
+		<img class="grow1" src="img/publicity-logo.svg"> 
+	
+
+
+		<nav class="grow2">
+			<a href="">Link 1</a>
+			<a href="">Link 2</a>
+			<a href="">Link 3</a>
+		</nav>
+	</header>
+
+	<main>
+		<section id="area_banner">
+			<img src="img/banner.jpg" alt="banner">
+		</section>
+
+		<section id="area_sobre">
+			<h2>Quem somos nós?</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+
+		<section id="area_servicos">
+			
+			<h2>O que podemos fazer por você?</h2>
+
+			<div id="painel_cards">
+				
+				<div class="card">
+					<h3>Campanhas de Marketing</h3>
+					<img src="img/card-campanha.jpg" alt="imagem do card">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+
+				<div class="card">
+					<h3>Marketing Digital</h3>
+					<img src="img/card-mkt.jpg" alt="imagem do card">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+
+
+			<div class="card">
+					<h3>Social Midia</h3>
+					<img src="img/card-midia.jpg" alt="imagem do card">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+
+
+			</div>
+
+		</section>
+
+		<section id="area_clientes">
+			<h2>Quem são nossos clientes?</h2>
+
+			<div id="painel_clientes">
+				<img src="img/cliente1.png" alt="logo cliente">
+				<img src="img/cliente2.png" alt="logo cliente">
+				<img src="img/cliente3.png" alt="logo cliente">
+				<img src="img/cliente4.png" alt="logo cliente">
+				<img src="img/cliente1.png" alt="logo cliente">
+				<img src="img/cliente2.png" alt="logo cliente">
+				<img src="img/cliente3.png" alt="logo cliente">
+				<img src="img/cliente4.png" alt="logo cliente">
+				<img src="img/cliente1.png" alt="logo cliente">
+				<img src="img/cliente2.png" alt="logo cliente">
+
+			</div>
+
+		</section>
+
+		<section id="area_contato">
+			<h2>Quer nossa ajuda? Entre em contato conosco!</h2>
+		</section>>
+	</main>
+
+	<footer>
+		<p>Desenvolvido por Avelar, 2022.</p>
+	</footer>
+
+</body>
+</html>
